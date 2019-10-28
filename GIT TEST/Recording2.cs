@@ -24,29 +24,29 @@ namespace GIT_TEST
 {
 #pragma warning disable 0436 //(CS0436) The type 'type' in 'assembly' conflicts with the imported type 'type2' in 'assembly'. Using the type defined in 'assembly'.
     /// <summary>
-    ///The Recording1 recording.
+    ///The Recording2 recording.
     /// </summary>
-    [TestModule("166a2796-fd82-4ad7-96bc-05bf1c15579f", ModuleType.Recording, 1)]
-    public partial class Recording1 : ITestModule
+    [TestModule("baf07815-767d-4923-9875-44437196ee84", ModuleType.Recording, 1)]
+    public partial class Recording2 : ITestModule
     {
         /// <summary>
         /// Holds an instance of the GIT_TESTRepository repository.
         /// </summary>
         public static GIT_TESTRepository repo = GIT_TESTRepository.Instance;
 
-        static Recording1 instance = new Recording1();
+        static Recording2 instance = new Recording2();
 
         /// <summary>
         /// Constructs a new instance.
         /// </summary>
-        public Recording1()
+        public Recording2()
         {
         }
 
         /// <summary>
         /// Gets a static instance of this recording.
         /// </summary>
-        public static Recording1 Instance
+        public static Recording2 Instance
         {
             get { return instance; }
         }
@@ -79,10 +79,6 @@ namespace GIT_TEST
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Validation", "Validating Exists on item 'TestAutomationWebinarsLiveAndOnD.AutomatedTestingWebinars'.", repo.TestAutomationWebinarsLiveAndOnD.AutomatedTestingWebinarsInfo, new RecordItemIndex(0));
-            Validate.Exists(repo.TestAutomationWebinarsLiveAndOnD.AutomatedTestingWebinarsInfo);
-            Delay.Milliseconds(100);
-            
         }
 
 #region Image Feature Data

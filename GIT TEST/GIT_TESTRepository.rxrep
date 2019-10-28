@@ -1,18 +1,58 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<repository
-name="GIT TESTRepository"
-id="2285861b-4b11-4e4f-b24a-ad3395b48f69">
-  <codegen
-  classname="GIT TESTRepository"
-  namespace="GIT_TEST"/>
-  <rootfolder
-  name="Root"
-  id="cc7c0311-87fb-4a25-a831-ad2966a6f1f4"
-  searchtimeout="30000ms"
-  capname="unknown"
-  isrooted="True"
-  usecache="True">
-    <basepath/>
-  </rootfolder>
-  <variables/>
+﻿<repository
+id="2285861b-4b11-4e4f-b24a-ad3395b48f69"
+name="GIT_TESTRepository">
+	<codegen
+	classname="GIT_TESTRepository"
+	namespace="GIT_TEST">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="cc7c0311-87fb-4a25-a831-ad2966a6f1f4"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="container,webdocument"
+		capname="webdocument"
+		id="1a25688b-35bd-46d3-b760-920af5f10758"
+		isrooted="True"
+		name="TestAutomationWebinarsLiveAndOnD"
+		refpath="/dom[@domain='www.ranorex.com']"
+		searchtimeout="30000ms"
+		usecache="False">
+			<item
+			addcaps="unknown,webelement,h1tag"
+			capname="h1tag"
+			id="8ce01889-ea0c-4f1a-b686-08904d1de360"
+			name="AutomatedTestingWebinars"
+			refimgid="806165df-aa1d-4218-b73c-aff9e985126d"
+			refpath="/dom[@domain='www.ranorex.com']//div[#'et_builder_outer_content']/div/div[1]/div[1]/div/div/div/h1[@innertext='Automated Testing Webinars']"
+			searchtimeout="30000ms">
+				/dom[@domain='www.ranorex.com']//div[#'et_builder_outer_content']/div/div[1]/div[1]//h1[@innertext&gt;'Automated Testing Webinar']
+			</item>
+			<basepath>
+				/dom[@domain='www.ranorex.com']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJN
+AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAGHRFWHRTb2Z0d2FyZQBQYWlu
+dC5ORVQgdjMuMzE3g3eGAAACKklEQVQ4T43R20vTcRjHcS/6G4Kgyy6KKKjwJogIDBJjIBUt2YVD
+yoGVmWUWzozMC92YaWqeSE1s0dThOtjBWUlKkMxDudXU1lCU6XSepzu82+/nvNrX6APP1e95Xt/f
+9/vEbaWh7TO1xi4qmjspfWKhuLqN++VGtLqn5BTVk1lQRbRVHGn4X8nTNclYtD020smBYDjaHhsJ
+cIxPbY8YIr+9viEGgqGwDBxLvixXfGJaLCLdedUfCwRDyPDKWoiF5SAuT0AMSA+2BXhXZqmydFBu
+bkfbmkFpayPOyQW8CwHs7jUxIN1NOkEa1llLGA7bsYX7KbTd4GiuiUuVbxhyzTMwuiwGpFX5lkLU
+dFjJ+55Mw5yGGpsRtX6Kk2Ue9jWewtBRx9eRJTEg7XnWF+TBo25SzUmo3inINLjIKoPD1QXsbNvN
+6fxr9Az5xIDm9kOm5gLce+xEW/aF1BYlCmshSr2PMxm32HV3B8ez0/jQPycG1NklTMxsUGUaQaMD
+lc7EIcse4vXJJF18xX7FVUpq6njd5xUDKVeKcE2v4xib52bxIAdza9mbf4CE9OscUZo5q3nO295p
+zD0zYuBcegHOCb+8KpvDi6G5hRMX8klIKaei6b083PdjCdNHjxhQqO/gcPsj77CB27PO2OQa9j+r
+8tq+/VyODC/yaXBxeyBRlUPv8Dzt3eO86PrNs85Rml7+ot7soLrVTqVpsypMTjGQcD5L/vC/tTkV
+F/cXNG0rDkAnVtkAAAAASUVORK5CYII=
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
 </repository>

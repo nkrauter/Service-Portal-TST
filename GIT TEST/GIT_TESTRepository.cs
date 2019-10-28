@@ -27,6 +27,7 @@ namespace GIT_TEST
     public partial class GIT_TESTRepository : RepoGenBaseFolder
     {
         static GIT_TESTRepository instance = new GIT_TESTRepository();
+        GIT_TESTRepositoryFolders.TestAutomationWebinarsLiveAndOnDAppFolder _testautomationwebinarsliveandond;
 
         /// <summary>
         /// Gets the singleton class instance representing the GIT_TESTRepository element repository.
@@ -43,6 +44,7 @@ namespace GIT_TEST
         public GIT_TESTRepository() 
             : base("GIT_TESTRepository", "/", null, 0, false, "cc7c0311-87fb-4a25-a831-ad2966a6f1f4", ".\\RepositoryImages\\GIT_TESTRepositorycc7c0311.rximgres")
         {
+            _testautomationwebinarsliveandond = new GIT_TESTRepositoryFolders.TestAutomationWebinarsLiveAndOnDAppFolder(this);
         }
 
 #region Variables
@@ -60,6 +62,15 @@ namespace GIT_TEST
                 return _selfInfo;
             }
         }
+
+        /// <summary>
+        /// The TestAutomationWebinarsLiveAndOnD folder.
+        /// </summary>
+        [RepositoryFolder("1a25688b-35bd-46d3-b760-920af5f10758")]
+        public virtual GIT_TESTRepositoryFolders.TestAutomationWebinarsLiveAndOnDAppFolder TestAutomationWebinarsLiveAndOnD
+        {
+            get { return _testautomationwebinarsliveandond; }
+        }
     }
 
     /// <summary>
@@ -68,6 +79,72 @@ namespace GIT_TEST
     [System.CodeDom.Compiler.GeneratedCode("Ranorex", global::Ranorex.Core.Constants.CodeGenVersion)]
     public partial class GIT_TESTRepositoryFolders
     {
+        /// <summary>
+        /// The TestAutomationWebinarsLiveAndOnDAppFolder folder.
+        /// </summary>
+        [RepositoryFolder("1a25688b-35bd-46d3-b760-920af5f10758")]
+        public partial class TestAutomationWebinarsLiveAndOnDAppFolder : RepoGenBaseFolder
+        {
+            RepoItemInfo _automatedtestingwebinarsInfo;
+
+            /// <summary>
+            /// Creates a new TestAutomationWebinarsLiveAndOnD  folder.
+            /// </summary>
+            public TestAutomationWebinarsLiveAndOnDAppFolder(RepoGenBaseFolder parentFolder) :
+                    base("TestAutomationWebinarsLiveAndOnD", "/dom[@domain='www.ranorex.com']", parentFolder, 30000, null, false, "1a25688b-35bd-46d3-b760-920af5f10758", "")
+            {
+                _automatedtestingwebinarsInfo = new RepoItemInfo(this, "AutomatedTestingWebinars", ".//div[#'et_builder_outer_content']/div/div[1]/div[1]//h1[@innertext>'Automated Testing Webinar']", 30000, null, "8ce01889-ea0c-4f1a-b686-08904d1de360");
+            }
+
+            /// <summary>
+            /// The Self item.
+            /// </summary>
+            [RepositoryItem("1a25688b-35bd-46d3-b760-920af5f10758")]
+            public virtual Ranorex.WebDocument Self
+            {
+                get
+                {
+                    return _selfInfo.CreateAdapter<Ranorex.WebDocument>(true);
+                }
+            }
+
+            /// <summary>
+            /// The Self item info.
+            /// </summary>
+            [RepositoryItemInfo("1a25688b-35bd-46d3-b760-920af5f10758")]
+            public virtual RepoItemInfo SelfInfo
+            {
+                get
+                {
+                    return _selfInfo;
+                }
+            }
+
+            /// <summary>
+            /// The AutomatedTestingWebinars item.
+            /// </summary>
+            [RepositoryItem("8ce01889-ea0c-4f1a-b686-08904d1de360")]
+            public virtual Ranorex.H1Tag AutomatedTestingWebinars
+            {
+                get
+                {
+                    return _automatedtestingwebinarsInfo.CreateAdapter<Ranorex.H1Tag>(true);
+                }
+            }
+
+            /// <summary>
+            /// The AutomatedTestingWebinars item info.
+            /// </summary>
+            [RepositoryItemInfo("8ce01889-ea0c-4f1a-b686-08904d1de360")]
+            public virtual RepoItemInfo AutomatedTestingWebinarsInfo
+            {
+                get
+                {
+                    return _automatedtestingwebinarsInfo;
+                }
+            }
+        }
+
     }
 #pragma warning restore 0436
 }
