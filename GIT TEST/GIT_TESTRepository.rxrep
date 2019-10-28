@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<repository
+name="GIT TESTRepository"
+id="2285861b-4b11-4e4f-b24a-ad3395b48f69">
+  <codegen
+  classname="GIT TESTRepository"
+  namespace="GIT_TEST"/>
+  <rootfolder
+  name="Root"
+  id="cc7c0311-87fb-4a25-a831-ad2966a6f1f4"
+  searchtimeout="30000ms"
+  capname="unknown"
+  isrooted="True"
+  usecache="True">
+    <basepath/>
+  </rootfolder>
+  <variables/>
+</repository>
